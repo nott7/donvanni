@@ -76,8 +76,8 @@ const page = () => {
           <img
             src="/raccolta.jpg"
             alt="Raccolta"
-            className="h-full mx-auto w-full
-            object-cover object-center
+            className="mx-auto h-[300px] lg:h-full
+            object-contain lg:object-cover object-center
             "
           />
         </motion.div>
