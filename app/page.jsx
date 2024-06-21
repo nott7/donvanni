@@ -1,10 +1,18 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <main>
       <section className="container mx-auto flex flex-col md:flex-row gap-4 justify-between py-24 px-8 border-b border-gray-200">
-        <div className="flex-1 flex flex-col">
+        <motion.div
+          className="flex-1 flex flex-col"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <h1 className="text-4xl font-semibold text-[#280400]">
             Don Vannì <br /> Vini di Sicilia
           </h1>
@@ -23,12 +31,22 @@ export default function Home() {
           >
             Scopri di più
           </Link>
-        </div>
-        <div className="flex-1">
+        </motion.div>
+        <motion.div
+          className="flex-1"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <img src="/home1.jpg" alt="Vigneti" className="w-[500px] ml-auto" />
-        </div>
+        </motion.div>
       </section>
-      <section className="container mx-auto px-8 flex flex-col items-center gap-4 py-16 border-b border-gray-200">
+      <motion.section
+        className="container mx-auto px-8 flex flex-col items-center gap-4 py-16 border-b border-gray-200"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <img src="/home2.jpg" alt="Vigneti" className="w-full" />
         <p className="text-gray-500 text-lg max-w-[800px] text-center">
           Il Brand "Don Vannì" nasce nel 2012 dalla volontà del rag. Pietro
@@ -37,9 +55,14 @@ export default function Home() {
           appassionato cultore del vino che con la sua produzione deliziava
           tutti i salotti nobili del tempo.
         </p>
-      </section>
+      </motion.section>
 
-      <section className="container mx-auto px-8 flex flex-col gap-4 py-8 text-gray-500 ">
+      <motion.section
+        className="container mx-auto px-8 flex flex-col gap-4 py-8 text-gray-500 "
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <h2 className="text-4xl font-semibold text-center text-[#280400] mb-2">
           I nostri vini
         </h2>
@@ -97,7 +120,7 @@ export default function Home() {
           </ul> */}
         </div>
         <img src="/home3.jpg" alt="Vigneti" className="w-full" />
-      </section>
+      </motion.section>
     </main>
   );
 }

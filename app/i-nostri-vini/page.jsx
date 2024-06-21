@@ -1,9 +1,15 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
 
 const page = () => {
   return (
     <main>
-      <section className="container mx-auto py-24 px-8">
+      <motion.section
+        className="container mx-auto py-24 px-8"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <h1 className="text-6xl text-center font-semibold text-[#280400]">
           I nostri vini
         </h1>
@@ -27,11 +33,14 @@ const page = () => {
           rudimentali e genuine, producendo vino esclusivamente da vigneti ad
           alberello di Nero d'Avola, Inzolia e Chardonnay.
         </p>
-      </section>
-      <section
+      </motion.section>
+      <motion.section
         className="container mx-auto py-24 px-8 border-y 
         border-gray-200 
       "
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
       >
         <h1 className="text-5xl text-center font-semibold text-[#280400]">
           I vini
@@ -50,10 +59,15 @@ const page = () => {
             <img src="/tappo.png" alt="Tappo" className="w-[250px] ml-auto" />
           </div>
         </div>
-      </section>
+      </motion.section>
       <section className="container mx-auto py-24 px-8 flex flex-col gap-28  justify-between items-center">
         <div className="flex flex-col md:flex-row gap-6 justify-between mt-8 w-full">
-          <div className="flex-1 flex flex-col">
+          <motion.div
+            className="flex-1 flex flex-col"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <h3 className="text-6xl font-semibold text-[#280400] mb-2">
               Don Vannì
             </h3>
@@ -71,17 +85,27 @@ const page = () => {
               Si consiglia di bere il vino in accostamento a piatti a base di
               carni rosse, arrosti e formaggi.
             </p>
-          </div>
-          <div className="flex-1">
+          </motion.div>
+          <motion.div
+            className="flex-1"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <img
               src="/vini.jpg"
               alt="Don Vanni Vino"
               className="w-[400px] ml-auto"
             />
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col md:flex-row-reverse gap-6 justify-between mt-8 w-full">
-          <div className="flex-1 flex flex-col items-end text-right">
+          <motion.div
+            className="flex-1 flex flex-col items-end text-right"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <h3 className="text-6xl font-semibold text-[#280400] mb-2">
               Don Vannì
             </h3>
@@ -102,14 +126,19 @@ const page = () => {
               Si accosta bene a tutti i tipi di piatti a base di pesce, carni
               bianche e crostacei.
             </p>
-          </div>
-          <div className="flex-1">
+          </motion.div>
+          <motion.div
+            className="flex-1"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <img
               src="/vini2.jpg"
               alt="Don Vanni Vino"
               className="w-[600px] mr-auto"
             />
-          </div>
+          </motion.div>
         </div>
       </section>
     </main>

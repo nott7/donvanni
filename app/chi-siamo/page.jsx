@@ -1,9 +1,14 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
 
 const page = () => {
   return (
     <main>
-      <section className="bg-[url('/asset.png')] bg-right-top bg-no-repeat">
+      <motion.section className="bg-[url('/asset.png')] bg-right-top bg-no-repeat"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="container mx-auto flex flex-col py-24 gap-8 px-8">
           <h1 className="text-6xl lg:text-8xl font-semibold text-[#280400]">Chi siamo</h1>
           <img
@@ -12,13 +17,17 @@ const page = () => {
             className="h-[150px] w-full object-cover object-center"
           />
         </div>
-      </section>
+      </motion.section >
       <section
         className="container mx-auto px-8 flex flex-col md:flex-row justify-between py-24 gap-12
         border-t border-gray-200
       "
       >
-        <div className="flex-1">
+        <motion.div className="flex-1"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <img
             src="/winery-67.png"
             alt="Tappo"
@@ -26,8 +35,12 @@ const page = () => {
             object-contain object-center
             "
           />
-        </div>
-        <div className="flex-[2] flex flex-col gap-4">
+        </motion.div>
+        <motion.div className="flex-[2] flex flex-col gap-4"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <div>
             <h2 className="text-2xl font-semibold text-[#280400] mb-2">
               La tradizione della vinificazione in Sicilia
@@ -76,7 +89,7 @@ const page = () => {
               pesce, carni bianche e crostacei, molto gradevole al gusto.
             </p>
           </div>
-        </div>
+        </motion.div>
       </section>
     </main>
   );
