@@ -76,7 +76,7 @@ const page = () => {
           <img
             src="/raccolta.jpg"
             alt="Raccolta"
-            className="h-full mx-auto
+            className="h-full mx-auto w-full
             object-cover object-center
             "
           />
