@@ -71,7 +71,7 @@ const page = () => {
               Entrato in punta di piedi nel mercato di settore sta conquistando,
               giorno dopo giorno, spazi di mercato sempre più ampi, grazie alla
               sua bontà, al suo gusto e alle sue caratteristiche salutistiche.
-              Con un gusto intensoe e sentori di frutta rossa matura: si
+              Con un gusto intenso e sentori di frutta rossa matura: si
               consiglia di accostarlo a tutti i piatti di carne rossa, agli
               arrosti e ai formaggi.
             </p>
