@@ -2,32 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #f9f5f1;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.header-navbar ul li a {
+  font-weight: 500;
+}
+
+.header-navbar ul li a.selected {
+  color: #dfc78c;
+}
+
+.header-navbar ul li a:hover {
+  color: #dfc78c;
+}
+
+.map-container .leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.nav-open {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 2px;
+  background-color: #d9b56a;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  transition: height 0.5s ease-in-out;
+  /* transform: translateY(-150%); */
+  background-color: #f9f5f1;
+  overflow: hidden;
+  color: #9ca3af;
+  height: 0;
+  z-index: 10000;
+}
+
+.mobile-menu.open {
+  height: calc(100vh - 80px);
+}
+
+.mobile-menu nav {
+  font-weight: 500;
+  padding: 2rem;
+}
+
+.mobile-menu nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 1.2rem !important;
+}
+
+.hamburger.open div:nth-child(1) {
+  -webkit-transform: translateY(13px);
+  -ms-transform: translateY(13px);
+  -o-transform: translateY(13px);
+  transform: translateY(13px);
+}
+
+.hamburger.open div:nth-child(3) {
+  -webkit-transform: translateY(-13px);
+  -ms-transform: translateY(-13px);
+  -o-transform: translateY(-13px);
+  transform: translateY(-13px);
 }
