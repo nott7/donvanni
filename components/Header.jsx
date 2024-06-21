@@ -37,68 +37,22 @@ const Header = () => {
           <nav className="header-navbar">
             <ul className="flex space-x-4 items-center text-gray-400">
               <li>
-                <Link
-                  href="/"
-                  className={`${
-                    window.location.pathname === "/" ? "selected" : ""
-                  }`}
-                >
-                  Home
-                </Link>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <Link
-                  href="/chi-siamo"
-                  className={`${
-                    window.location.pathname === "/chi-siamo" ? "selected" : ""
-                  }`}
-                >
-                  Chi siamo
-                </Link>
+                <Link href="/chi-siamo">Chi siamo</Link>
               </li>
               <li>
-                <Link
-                  href="/la-nostra-storia"
-                  className={`${
-                    window.location.pathname === "/la-nostra-storia"
-                      ? "selected"
-                      : ""
-                  }`}
-                >
-                  La nostra storia
-                </Link>
+                <Link href="/la-nostra-storia">La nostra storia</Link>
               </li>
               <li>
-                <Link
-                  href="/i-nostri-vini"
-                  className={`${
-                    window.location.pathname === "/i-nostri-vini"
-                      ? "selected"
-                      : ""
-                  }`}
-                >
-                  I nostri vini
-                </Link>
+                <Link href="/i-nostri-vini">I nostri vini</Link>
               </li>
               <li>
-                <Link
-                  href="/gallery"
-                  className={`${
-                    window.location.pathname === "/gallery" ? "selected" : ""
-                  }`}
-                >
-                  Gallery
-                </Link>
+                <Link href="/gallery">Gallery</Link>
               </li>
               <li>
-                <Link
-                  href="/contatti"
-                  className={`${
-                    window.location.pathname === "/contatti" ? "selected" : ""
-                  }`}
-                >
-                  Contatti
-                </Link>
+                <Link href="/contatti">Contatti</Link>
               </li>
             </ul>
           </nav>
@@ -122,19 +76,29 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/chi-siamo" onClick={() => setIsOpen(false)}>Chi siamo</Link>
+                <Link href="/chi-siamo" onClick={() => setIsOpen(false)}>
+                  Chi siamo
+                </Link>
               </li>
               <li>
-                <Link href="/la-nostra-storia" onClick={() => setIsOpen(false)}>La nostra storia</Link>
+                <Link href="/la-nostra-storia" onClick={() => setIsOpen(false)}>
+                  La nostra storia
+                </Link>
               </li>
               <li>
-                <Link href="/i-nostri-vini" onClick={() => setIsOpen(false)}>I nostri vini</Link>
+                <Link href="/i-nostri-vini" onClick={() => setIsOpen(false)}>
+                  I nostri vini
+                </Link>
               </li>
               <li>
-                <Link href="/gallery" onClick={() => setIsOpen(false)}>Gallery</Link>
+                <Link href="/gallery" onClick={() => setIsOpen(false)}>
+                  Gallery
+                </Link>
               </li>
               <li>
-                <Link href="/contatti" onClick={() => setIsOpen(false)}>Contatti</Link>
+                <Link href="/contatti" onClick={() => setIsOpen(false)}>
+                  Contatti
+                </Link>
               </li>
             </ul>
           </nav>
