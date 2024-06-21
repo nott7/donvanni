@@ -18,15 +18,6 @@ export default function RootLayout({ children }) {
     <html lang="it">
       <head>
         <IubendaScript />
-        <script
-          type="text/javascript"
-          src="https://cs.iubenda.com/autoblocking/3679281.js"
-        ></script>
-        <script
-          type="text/javascript"
-          src="//cdn.iubenda.com/cs/iubenda_cs.js"
-          async
-        ></script>
       </head>
       <body>
         <div className="wrapper">

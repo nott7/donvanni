@@ -33,6 +33,17 @@ const IubendaScript = () => {
       };
     `;
     document.head.appendChild(script1);
+    const script2 = document.createElement("script");
+    script2.type = "text/javascript";
+    script2.src = "//cdn.iubenda.com/cs/ccpa/stub.js";
+    script2.async = true;
+    document.head.appendChild(script2);
+
+    const script3 = document.createElement("script");
+    script3.type = "text/javascript";
+    script3.src = "//cdn.iubenda.com/cs/iubenda_cs.js";
+    script3.async = true;
+    document.head.appendChild(script3);
   }, []);
 
   return null;
