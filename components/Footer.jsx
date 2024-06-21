@@ -75,13 +75,19 @@ const Footer = () => {
         <p className="hidden lg:block">|</p>
 
         <span>
-          <Link href="/privacy-policy" className="hover:underline">
+          <a
+            href="https://www.iubenda.com/privacy-policy/11302309"
+            className="hover:underline"
+          >
             <strong>Privacy Policy</strong>
-          </Link>
+          </a>
           {"  "}-{"  "}
-          <Link href="/cookie-policy" className="hover:underline">
+          <a
+            href="https://www.iubenda.com/privacy-policy/11302309/cookie-policy"
+            className="hover:underline"
+          >
             <strong>Cookie Policy</strong>
-          </Link>
+          </a>
         </span>
       </footer>
     </div>
