@@ -28,7 +28,7 @@ const page = () => {
       "
       >
         <motion.div
-          className="flex-[2] flex flex-col gap-4"
+          className="flex-[2] flex flex-col gap-4 overflow-hidden"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
@@ -68,7 +68,7 @@ const page = () => {
           </div>
         </motion.div>
         <motion.div
-          className="flex-1"
+          className="flex-1 overflow-hidden"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
@@ -88,7 +88,7 @@ const page = () => {
       "
       >
         <motion.div
-          className="flex-1 hidden md:block"
+          className="flex-1 hidden md:block overflow-x: hidden;"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
@@ -102,7 +102,7 @@ const page = () => {
           />
         </motion.div>
         <motion.div
-          className="flex-[2] flex flex-col gap-4"
+          className="flex-[2] flex flex-col gap-4 overflow-x: hidden;"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}

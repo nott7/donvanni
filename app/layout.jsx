@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <IubendaScript />
       </head>
       <body>
-        <div className="wrapper">
+        <div className="wrapper overflow-x-hidden">
           <Header />
           {children}
           <Footer />
