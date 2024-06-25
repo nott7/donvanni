@@ -52,6 +52,9 @@ const Header = () => {
                 <Link href="/gallery">Gallery</Link>
               </li>
               <li>
+                <Link href="/valori-nutrizionali">Valori nutrizionali</Link>
+              </li>
+              <li>
                 <Link href="/contatti">Contatti</Link>
               </li>
             </ul>
@@ -93,6 +96,14 @@ const Header = () => {
               <li>
                 <Link href="/gallery" onClick={() => setIsOpen(false)}>
                   Gallery
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/valori-nutrizionali"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Valori nutrizionali
                 </Link>
               </li>
               <li>

@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import IubendaScript from "@/components/IubendaScript";
 
 export const metadata = {
-  title: "Don Vannì - Produttori di vino in Sicilia",
+  title: "Don Vannì - Azienda vinicola in Sicilia",
   description:
     "Don Vannì produce vino siciliano prodotto nei territori agrigentini esclusivamente da vitigni ad alberello. Scopri di più sul nostro vino.",
   icons: {
