@@ -112,6 +112,59 @@ const page = () => {
             />
           </motion.div>
         </div>
+        <div className="flex flex-col-reverse md:flex-row gap-6 justify-between mt-16 w-full">
+          <motion.div
+            className="flex-1"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img
+              src="/vini.jpg"
+              alt="Don Vanni Vino"
+              className="w-[400px] mr-auto"
+            />
+          </motion.div>
+          <motion.div
+            className="flex-1 flex flex-col text-right"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h3 className="text-4xl font-semibold text-[#280400] mb-2">
+              Don Vannì - Vino Rosso Siciliano
+            </h3>
+            <h4 className="text-2xl font-semibold text-[#280400] mb-2">
+              Valori nutrizionali per 100ml
+            </h4>
+            <ul className="text-gray-500  mt-4 text-lg">
+              <li>
+                <strong>Energia</strong>: 300,4 kJ / 73,1 Kcal
+              </li>
+              <li>
+                <strong>Alcol</strong>: 71,9g
+              </li>
+              <li>
+                <strong>Carboidrati</strong>: 1,2g
+              </li>
+              <li className="mr-2">
+                di cui <strong>Zuccheri</strong>: 1,2g
+              </li>
+              <li>
+                <strong>Grassi</strong>: 0g
+              </li>
+              <li className="mr-2">
+                di cui <strong>Saturi</strong>: 0g
+              </li>
+              <li>
+                <strong>Proteine</strong>: 0g
+              </li>
+              <li>
+                <strong>Sale</strong>: 0g
+              </li>
+            </ul>
+          </motion.div>
+        </div>
       </section>
     </main>
   );
