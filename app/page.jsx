@@ -121,7 +121,7 @@ export default function Home() {
         </div>
         <img src="/home3.jpg" alt="Vigneti" className="w-full" />
       </motion.section>
-      <motion.section
+      {/* <motion.section
         className="container mx-auto px-8 flex flex-col gap-4 py-8 text-gray-500 "
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -260,7 +260,7 @@ export default function Home() {
             </ul>
           </motion.div>
         </div>
-      </motion.section>
+      </motion.section> */}
     </main>
   );
 }
